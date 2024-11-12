@@ -43,6 +43,36 @@ npm run dev
    ```
 Acesse o projeto em http://localhost:3000.
 
+## Instruções para Processar o Arquivo CSV
+
+O **arquivo CSV** é baixado diretamente do site da **Caixa Econômica Federal**. **Antes de enviar o arquivo para o sistema**, é necessário realizar as seguintes etapas de limpeza no **início do arquivo**:
+
+### Passo 1: Baixar o arquivo CSV
+- Acesse o site oficial da **Caixa Econômica Federal** para baixar o arquivo CSV com os dados dos imóveis:  
+  [https://venda-imoveis.caixa.gov.br/sistema/download-lista.asp](https://venda-imoveis.caixa.gov.br/sistema/download-lista.asp)
+
+### Passo 2: Abrir o arquivo CSV
+- Abra o arquivo CSV utilizando um editor de planilhas, como Excel ou Google Sheets, ou um editor de texto para manipulação de dados.
+
+### Passo 3: Limpar o início do arquivo
+- **Remova** todas as linhas antes do cabeçalho, que incluem informações adicionais como a **data de geração** ou qualquer outra linha irrelevante.
+- **Mantenha** apenas o cabeçalho com os campos: 
+  - N° do imóvel, UF, Cidade, Bairro, Endereço, Preço, Valor de avaliação, Desconto, Descrição, Modalidade de venda, Link de acesso.
+
+### Passo 4: Validar o cabeçalho
+- Certifique-se de que o arquivo contenha o cabeçalho correto e que ele esteja na primeira linha, pronto para ser processado pelo sistema.
+
+### Passo 5: Salvar o arquivo limpo
+- Após a limpeza, **salve** o arquivo com um novo nome ou substitua o antigo para garantir que o arquivo agora contém apenas o **cabeçalho** e as **linhas de imóveis**.
+
+### Exemplo de CSV Antes e Depois
+
+#### Antes da limpeza (exemplo):
+![CSV Antes](./print-2.png)
+
+#### Depois da limpeza (exemplo):
+![CSV Depois](./print-2.png)
+
 ## Como Contribuir
 Faça um fork deste repositório.
 - Crie uma nova branch para sua melhoria:
