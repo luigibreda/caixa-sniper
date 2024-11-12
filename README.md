@@ -69,10 +69,10 @@ O **arquivo CSV** é baixado diretamente do site da **Caixa Econômica Federal**
 ### Exemplo de CSV Antes e Depois
 
 #### Antes da limpeza (exemplo):
-![CSV Antes](./print-2.png)
+![CSV Antes](./csv-antes.png)
 
 #### Depois da limpeza (exemplo):
-![CSV Depois](./print-2.png)
+![CSV Depois](./csv-depois.png)
 
 ## Como Contribuir
 Faça um fork deste repositório.
